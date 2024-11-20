@@ -27,7 +27,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="max-content-width section-padding-x">
+    <div className="max-content-width section-padding-x py-6">
       <div className="flex  justify-between items-center">
         <div>
           <h1 className="text-xl">Logo</h1>
