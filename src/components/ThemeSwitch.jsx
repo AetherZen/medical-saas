@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "./Icons";
+import { FaToggleOff } from "react-icons/fa6";
 
 const ThemeSwitch = () => {
   const { theme, setTheme } = useTheme();
@@ -18,7 +19,7 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      className="border border-purple-500 rounded-2xl p-1 hover:bg-purple-500 hover:bg-opacity-10 dark:hover:bg-opacity-10 dark:hover:bg-amber-50"
+      className=""
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? <SunIcon /> : <MoonIcon />}
