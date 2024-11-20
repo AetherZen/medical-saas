@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import ButtonFilled from "../ButtonFilled/ButtonFilled";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 const Navbar = () => {
   const navItems = [
@@ -8,8 +10,8 @@ const Navbar = () => {
       route: "/",
     },
     {
-      navItem: "Specialties ",
-      route: "/specialties ",
+      navItem: "Specialties",
+      route: "/specialties",
     },
     {
       navItem: "Services",
@@ -26,16 +28,16 @@ const Navbar = () => {
   ];
   return (
     <div className="max-content-width section-padding-x">
-      <div className="flex  justify-between">
+      <div className="flex  justify-between items-center">
         <div>
-          <h1>Logo</h1>
+          <h1 className="text-xl">Logo</h1>
         </div>
         <div>
-          <ul className="flex items-center gap-16">
+          <ul className="flex items-center gap-10 xl:gap-16">
             {navItems.map((item, idx) => (
               <li key={idx}>
                 <Link
-                  className="font-semibold text-[#121212]"
+                  className="font-semibold text-[#121212] dark:text-az-textDark text-sm md:text-base"
                   href={item?.route}
                 >
                   {item?.navItem}
@@ -45,7 +47,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <ButtonFilled text="Book Schedule" />
+          <div className="flex items-center gap-3">
+            <ThemeSwitch />
+            <ButtonFilled text="Book Schedule" />
+          </div>
         </div>
       </div>
     </div>

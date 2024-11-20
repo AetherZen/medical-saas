@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         >
           {/* dummy header to demonstrate the theme switch */}
           <nav className="flex justify-end p-4">
-            <ThemeSwitch />
+            
           </nav>
           {children}
         </ThemeProvider>
