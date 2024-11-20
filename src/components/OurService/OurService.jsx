@@ -63,12 +63,12 @@ const OurService = () => {
           {/* Right Side: Images */}
 
           <div>
-            <div className=" my-16  px-6 lg:px-8">
+            <div className=" px-6 lg:px-8">
               <div className="max-w-7xl mx-auto text-left">
-                <h2 className="text-3xl font-bold  text-gray-900 sm:text-4xl">
+                <h2 className="text-xl font-bold  text-gray-900 lg:text-5xl !leading-[65px]">
                   Our Services Made Us Confident.
                 </h2>
-                <p className="my-4 text-sm text-gray-600">
+                <p className="mb-4 mt-8 text-sm lg:text-base text-gray-600">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
@@ -78,29 +78,29 @@ const OurService = () => {
               </div>
 
               <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                <div className="bg-white shadow-md rounded-lg ">
+                <div className="">
                   <Image
-                    src="https://i.postimg.cc/5N6DYK1y/Rectangle-2.png"
+                    src="https://i.postimg.cc/yNxJKM21/Rectangle-2.png"
                     alt="Service 1"
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover rounded-lg"
                     height={400}
                     width={300}
                   />
                 </div>
-                <div className="bg-white shadow-md rounded-lg ">
+                <div className="">
                   <Image
-                    src="https://i.postimg.cc/5N6DYK1y/Rectangle-2.png"
+                    src="https://i.postimg.cc/1XQ5827N/Rectangle-3.png"
                     alt="Service 2"
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover rounded-lg"
                     height={400}
                     width={300}
                   />
                 </div>
-                <div className="bg-white shadow-md rounded-lg ">
+                <div className="">
                   <Image
-                    src="https://i.postimg.cc/5N6DYK1y/Rectangle-2.png"
+                    src="https://i.postimg.cc/5NPbJXJz/Rectangle-4.png"
                     alt="Service 2"
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover rounded-lg"
                     height={400}
                     width={300}
                   />
