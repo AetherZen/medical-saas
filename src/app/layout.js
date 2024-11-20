@@ -33,10 +33,7 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          {/* dummy header to demonstrate the theme switch */}
-          <nav className="flex justify-end p-4">
-            
-          </nav>
+          
           {children}
         </ThemeProvider>
       </body>
