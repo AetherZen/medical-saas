@@ -46,19 +46,19 @@ const Appointment = () => {
   ];
 
   return (
-    <section className="py-12 bg-gradient-to-b from-pink-50 via-white to-blue-50">
+    <section className="py-12 bg-[#EAF2F8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-2xl mb-20 lg:text-5xl font-bold text-gray-900 text-center max-w-3xl mx-auto lg:!leading-[70px]">
           Your Problem Our Commitment! Meet Our Experience Doctors.
         </h1>
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-between mb-4 ">
           <p className="text-center text-gray-600 mb-4">
             Short your specific Department save your time and afford.
           </p>
           <select
             value={department}
             onChange={(e) => setDepartment(e.target.value)}
-            className="border border-gray-300 outline-none rounded-md px-4 py-2 text-gray-600"
+            className="border border-gray-300 outline-none rounded-md px-4 py-2 text-gray-600 bg-[#EAF2F8]"
           >
             <option value="All Departments">All Departments</option>
             <option value="Neurology">Neurology</option>

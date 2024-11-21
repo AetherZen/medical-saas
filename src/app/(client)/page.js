@@ -13,6 +13,7 @@ const page = () => {
     <div>
       <Hero />
       <OurService />
+      <Appointment />
       <PackageSection />
       <FAQ />
     </div>

@@ -30,7 +30,7 @@ const OurService = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-br from-white to-blue-50 p-8 md:p-16">
+      <div className="bg-[#EAF2F8] p-8 md:p-16">
         <div className="max-w-7xl mx-auto text-left lg:hidden block">
           <h2 className="text-xl font-bold  text-gray-900 lg:text-5xl !leading-[28px]">
             Our Services Made Us Confident.
