@@ -1,9 +1,6 @@
 import Image from "next/image";
 
-
-
 const OurService = () => {
-  
   const serviceData = [
     {
       image: "https://i.postimg.cc/9QjfM22c/Group-5.png",
@@ -34,10 +31,21 @@ const OurService = () => {
   return (
     <div>
       <div className="bg-gradient-to-br from-white to-blue-50 p-8 md:p-16">
+        <div className="max-w-7xl mx-auto text-left lg:hidden block">
+          <h2 className="text-xl font-bold  text-gray-900 lg:text-5xl !leading-[28px]">
+            Our Services Made Us Confident.
+          </h2>
+          <p className="mb-4 mt-4 text-sm lg:text-base text-gray-600">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side: Services */}
           <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Service Cards */}
               {serviceData?.map((service, index) => (
                 <div
@@ -66,7 +74,7 @@ const OurService = () => {
 
           {/* Right Side: Images */}
 
-          <div>
+          <div className="lg:block hidden">
             <div className=" px-6 lg:px-8">
               <div className="max-w-7xl mx-auto text-left">
                 <h2 className="text-xl font-bold  text-gray-900 lg:text-5xl !leading-[65px]">
