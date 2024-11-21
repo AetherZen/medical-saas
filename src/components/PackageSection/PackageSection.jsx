@@ -43,28 +43,34 @@ const PackageSection = () => {
   return (
     <div>
       <section className="py-12 bg-blue-50">
-        <div className="container mx-auto ">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 max-w-[50%]">
-            We try to Provide Affordable Package. Explore our Package!
+        <div className="container mx-auto">
+          {/* Centered Title */}
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center max-w-3xl mx-auto">
+            We try to Provide Affordable Package. <br />
+            Explore our Package!
           </h2>
+
+          {/* Package Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4">
             {packagesData.slice(0, 3).map((pkg) => (
               <div
                 key={pkg.id}
-                className="bg-white rounded-lg shadow-lg overflow-hidden"
+                className="bg-white rounded-lg  overflow-hidden"
               >
                 <Image
                   src={pkg.image}
                   alt={pkg.title}
                   width={400}
                   height={200}
-                  className="w-[427px] h-[250px] object-cover"
+                  className="w-[423px] h-[245px] object-cover"
                 />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-gray-800">
                     {pkg.title}
                   </h3>
-                  <p className="text-gray-600 text-xs mt-2">{pkg.description}</p>
+                  <p className="text-gray-600 text-xs mt-2">
+                    {pkg.description}
+                  </p>
                   <Link
                     href="#"
                     className="flex justify-center items-center text-sm text-black font-medium mt-4"
@@ -78,11 +84,13 @@ const PackageSection = () => {
           </div>
 
           {/* See All Button */}
-          <div className="mt-8 flex justify-center items-center ">
-            <button className="bg-[#65cec0] hover:bg-[#275750] text-white text-sm font-medium py-2 px-6 rounded-md">
-              See all package
-            </button>
-          </div>
+          <Link  href="#">        
+            <div className="mt-8 flex justify-center items-center">
+              <button className="bg-[#65ced0] hover:bg-[#275750] text-white text-sm font-medium py-2 px-6 rounded-md">
+                See all package
+              </button>
+            </div>
+          </Link>
         </div>
       </section>
     </div>
