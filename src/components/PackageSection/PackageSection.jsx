@@ -4,35 +4,35 @@ import Link from "next/link";
 const packagesData = [
   {
     id: 1,
-    image: "https://i.postimg.cc/9QrMV7fq/Frame-76394.png",
+    image: "https://i.postimg.cc/sDHqFB88/Frame-76821.png",
     title: "Orthopedic Surgery",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
     id: 2,
-    image: "https://i.postimg.cc/KcfvMNkM/Frame-76394-1.png",
+    image: "https://i.postimg.cc/BbQYksC4/Frame-76822.png",
     title: "Cardiac Surgery",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
     id: 3,
-    image: "https://i.postimg.cc/j5KtWwRc/Frame-76394-2.png",
+    image: "https://i.postimg.cc/D0jjKDCs/Frame-76394.png",
     title: "Neurosurgery",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
     id: 4,
-    image: "/path-to-image-4.jpg",
+    image: "https://i.postimg.cc/KcfvMNkM/Frame-76394-1.png",
     title: "Plastic Surgery",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
   {
     id: 5,
-    image: "/path-to-image-5.jpg",
+    image: "https://i.postimg.cc/j5KtWwRc/Frame-76394-2.png",
     title: "General Surgery",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
@@ -45,7 +45,7 @@ const PackageSection = () => {
       <section className="py-12 bg-blue-50">
         <div className="container mx-auto">
           {/* Centered Title */}
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl mb-20 lg:text-5xl font-bold text-gray-900 text-center max-w-4xl mx-auto lg:!leading-[70px]">
             We try to Provide Affordable Package. <br />
             Explore our Package!
           </h2>
