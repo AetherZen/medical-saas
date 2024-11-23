@@ -30,7 +30,7 @@ const OurService = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-br from-white to-blue-50 p-8 md:p-16">
+      <div className="bg-[#EAF2F8] p-8 md:p-16">
         <div className="max-w-7xl mx-auto text-left lg:hidden block">
           <h2 className="text-xl font-bold  text-gray-900 lg:text-5xl !leading-[28px]">
             Our Services Made Us Confident.
@@ -42,7 +42,7 @@ const OurService = () => {
             and scrambled it to make a type specimen book.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Side: Services */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -89,7 +89,7 @@ const OurService = () => {
                 </p>
               </div>
 
-              <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
                 <div className="">
                   <Image
                     src="https://i.postimg.cc/yNxJKM21/Rectangle-2.png"

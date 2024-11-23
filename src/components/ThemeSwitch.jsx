@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "./Icons";
-import { FaToggleOff } from "react-icons/fa6";
+
 
 const ThemeSwitch = () => {
   const { theme, setTheme } = useTheme();
