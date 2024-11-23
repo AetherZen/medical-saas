@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ButtonFilled from "../ButtonFilled/ButtonFilled";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import NavbarSmallDevice from "./NavbarSmallDevice";
 
 const Navbar = () => {
   const navItems = [
@@ -27,8 +28,9 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="max-content-width section-padding-x py-6">
-      <div className="flex  justify-between items-center">
+    <div className="max-content-width section-padding-x ">
+      <NavbarSmallDevice  navItems={navItems}/>
+      <div className="hidden lg:flex py-6 justify-between items-center">
         <div>
           <h1 className="text-xl">Logo</h1>
         </div>
