@@ -47,10 +47,10 @@ const MultipleService = () => {
       <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-12 gap-10">
         {/* Left Content */}
         <div className="lg:col-span-7">
-          <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 max-w-3xl mb-8">
-            We Provide Multipool Services Centers to You
+          <h1 className="text-2xl lg:text-5xl font-bold text-gray-900 max-w-3xl mb-8 md:text-center">
+            We Provide Multiple Services Centers to You
           </h1>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-600 text-sm lg:text-base md:text-center">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -61,13 +61,13 @@ const MultipleService = () => {
         {/* Right Content */}
         <div className=" lg:col-span-5 bg-white shadow-lg rounded-lg p-6 space-y-4  mt-6 lg:mt-0">
           <div className="flex justify-between items-center">
-            <h3 className="text-lg font-medium text-gray-900 ">
+            <h3 className="text-lg font-semibold text-gray-900 ">
               We Provide 50+ Services <br />
               With Our Experts Team!
             </h3>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 ">
               {/* Images */}
-              <div className="flex -space-x-2">
+              <div className="lg:flex -space-x-2 md:flex hidden">
                 <Image
                   src="https://i.postimg.cc/jdfyH2NN/Ellipse-2-1.png"
                   alt="Expert 1"
@@ -95,7 +95,7 @@ const MultipleService = () => {
               </div>
             </div>
           </div>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-sm lg:text-base">
             Find your services what services you need
           </p>
           {/* Search Input */}
