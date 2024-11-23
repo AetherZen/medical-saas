@@ -1,23 +1,44 @@
-"use client"
-
+"use client";
 
 import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-import './styles.css';
-
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 
+const services = [
+  {
+    image: "https://i.postimg.cc/4ywqddxK/Frame-76825.png",
+    alt: "Service 1",
+  },
+  {
+    image: "https://i.postimg.cc/Vk9MbCcH/Frame-29.png",
+    alt: "Service 2",
+  },
+  {
+    image: "https://i.postimg.cc/GpcDPmL3/Frame-27.png",
+    alt: "Service 3",
+  },
+  {
+    image: "https://i.postimg.cc/0rRMz8Xs/Frame-30.png",
+    alt: "Service 4",
+  },
+  {
+    image: "https://i.postimg.cc/4ywqddxK/Frame-76825.png",
+    alt: "Service 5",
+  },
+  {
+    image: "https://i.postimg.cc/Vk9MbCcH/Frame-29.png",
+    alt: "Service 6",
+  },
+];
 
 const MultipleService = () => {
   return (
@@ -72,7 +93,6 @@ const MultipleService = () => {
                   40+
                 </span>
               </div>
-              {/* <span className="text-sm text-white w-[54px] h-[54px] rounded-full border-2 border-white bg-[#65c8d0]">40+</span> */}
             </div>
           </div>
           <p className="text-gray-600">
@@ -92,9 +112,8 @@ const MultipleService = () => {
         </div>
       </div>
 
-      {/* slider part  */}
-
-      <div className="lg:mt-20 mt-16 ">
+      {/* bottom side part  */}
+      <div className="lg:mt-20 mt-16">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -108,21 +127,28 @@ const MultipleService = () => {
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 20,
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
+          autoplay
+          className="mySwiper  my-20"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-         
+          {services.map((service, index) => (
+            <SwiperSlide key={index} className="mb-10">           
+             <Image
+                src={service.image}
+                alt={service.alt}
+                width={400}
+                height={300}
+                className="rounded-lg"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
