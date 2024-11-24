@@ -47,10 +47,10 @@ const MultipleService = () => {
       <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-12 gap-10">
         {/* Left Content */}
         <div className="lg:col-span-7">
-          <h1 className="text-2xl lg:text-5xl font-bold text-gray-900 max-w-3xl mb-8 md:text-center">
+          <h1 className="text-2xl lg:text-5xl font-bold text-gray-900 max-w-3xl mb-8 text-center lg:text-left">
             We Provide Multiple Services Centers to You
           </h1>
-          <p className="mt-4 text-gray-600 text-sm lg:text-base md:text-center">
+          <p className="mt-4 text-gray-600 text-sm lg:text-base text-center lg:text-left">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
