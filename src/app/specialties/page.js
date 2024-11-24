@@ -1,10 +1,13 @@
-import SpecialtiesPage from "@/components/SpecialtesPage/SpecialtiesPage";
+// import SpecialtiesPage from "@/components/SpecialtesPage/SpecialtiesPage";
+
+import CategoryDetails from "@/components/CategoryDetails/CategoryDetails";
 
 
 const page = () => {
     return (
         <div>
-          <SpecialtiesPage />  
+          {/* <SpecialtiesPage />   */}
+          < CategoryDetails />
         </div>
     );
 };
