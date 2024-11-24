@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const DoctorSection = () => {
   return (
-    <div className="section-padding-y">
+    <div className="section-padding-y section-padding-x">
       {/* heading section */}
       <div>
         <h1 className="text-2xl md:text-5xl font-semibold text-center  ">
