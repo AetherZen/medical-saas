@@ -52,26 +52,28 @@ const ServicesPage = () => {
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {services.map((service, index) => (
-                  <div
-                    key={index}
-                    className="relative group rounded-lg overflow-hidden shadow-md"
-                  >
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      width={400}
-                      height={300}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-50 transition-all duration-300 flex items-end p-4">
-                      <h3 className="text-white font-medium text-lg">
-                        {service.title}
-                      </h3>
-                      <span className="ml-auto text-white text-xl group-hover:translate-x-1 transition-transform duration-300">
-                        <BsArrowRight />
-                      </span>
+                  <Link>
+                    <div
+                      key={index}
+                      className="relative group rounded-lg overflow-hidden shadow-md"
+                    >
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        width={400}
+                        height={300}
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-50 transition-all duration-300 flex items-end p-4">
+                        <h3 className="text-white font-medium text-lg">
+                          {service.title}
+                        </h3>
+                        <span className="ml-auto text-white text-xl group-hover:translate-x-1 transition-transform duration-300">
+                          <BsArrowRight />
+                        </span>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
