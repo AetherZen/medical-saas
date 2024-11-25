@@ -104,7 +104,31 @@ const PatientStory = () => {
               </div>
             </div>
 
-           
+            {/* right part  */}
+            <div className="md:col-span-4 ">
+              <div className="space-y-4 ">
+                {storyData?.slice(2, 6).map((item, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-lg overflow-hidden lg:flex p-2  "
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={400}
+                      height={300}
+                      className=" lg:w-[185px] lg:h-[108px] w-full object-cover rounded-lg pb-2 lg:pb-0"
+                    />
+                    <div className="md:px-4">
+                      <h4 className="lg:text-sm text-sm font-medium">{item.title}</h4>
+                      <p className="lg:text-sm text-xs text-gray-600 mt-1 line-clamp-2 ">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
