@@ -139,6 +139,42 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
+
+      {/* Healthcare section */}
+      <div className="section-padding-y grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-6 xl:gap-14">
+      <div className="">
+          <div className="text-justify  space-y-6">
+            <h1 className="md:text-lg lg:text-2xl font-semibold">
+            Transforming Healthcare{" "}
+            </h1>
+            <p className="text-[12px] md:text-sm lg:text-base">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p className="text-[12px] md:text-sm lg:text-base">
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+          </div>
+        
+        </div>
+        <div className="grid grid-cols-2  gap-1 md:gap-2.5">
+          <Image
+            height={320}
+            width={190}
+            alt="about us"
+            className="rounded-md md:flex-1 h-full w-full"
+            src="/about_us_healthcare_1.png"
+          />
+          <Image
+            height={320}
+            width={190}
+            alt="about us"
+            className="rounded-md h-full w-full"
+            src="/about_us_healthcare2.png"
+          />
+          
+        </div>
+       
+      </div>
     </div>
   );
 };
