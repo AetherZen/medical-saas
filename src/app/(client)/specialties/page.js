@@ -1,6 +1,8 @@
 // import SpecialtiesPage from "@/components/SpecialtesPage/SpecialtiesPage";
 
-import PatientStory from "@/components/PatientStories/PatientStory";
+import CallToDoctor from "@/components/CallToDoctor/CallToDoctor";
+
+// import PatientStory from "@/components/PatientStories/PatientStory";
 
 // import CategoryDetails from "@/components/CategoryDetails/CategoryDetails";
 
@@ -10,7 +12,8 @@ const page = () => {
         <div>
           {/* <SpecialtiesPage />   */}
           {/* < CategoryDetails /> */}
-          <PatientStory />
+          {/* <PatientStory /> */}
+          <CallToDoctor />
         </div>
     );
 };
