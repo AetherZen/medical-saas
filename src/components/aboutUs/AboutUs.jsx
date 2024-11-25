@@ -3,8 +3,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="section-padding-x bg-[#F1F4FB]">
-      {/* about us section */}
-
+      {/* About Us Section */}
       <div className="section-padding-y">
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-center">
           About Us
@@ -51,6 +50,61 @@ const AboutUs = () => {
               width={538}
               className="w-full"
             />
+          </div>
+        </div>
+      </div>
+
+      {/*  Mission & Vision*/}
+      <div className="section-padding-y grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 xl:gap-14">
+        <div className="flex gap-1 md:gap-2.5">
+          <Image
+            height={320}
+            width={190}
+            alt="about us"
+            className="rounded-md md:flex-1 "
+            src="/about_us_2.1.png"
+          />
+          <Image
+            height={320}
+            width={190}
+            alt="about us"
+            className="rounded-md md:flex-1 "
+            src="/about_us_2.2.png"
+          />
+          <Image
+            height={320}
+            width={190}
+            alt="about us"
+            className="rounded-md md:flex-1  lg:hidden xl:block"
+            src="/about_us_2.3.png"
+          />
+        </div>
+        <div className="order-first lg:order-last">
+          <div className="text-justify  space-y-6">
+            <h1 className="md:text-lg lg:text-2xl font-semibold">
+              “HOSPITAL NAME” Mission{" "}
+            </h1>
+            <p className="text-[12px] md:text-sm lg:text-base">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book.
+            </p>
+          </div>
+          <div className="text-justify mt-5 space-y-6">
+            <h1 className="md:text-lg lg:text-2xl font-semibold">
+              “HOSPITAL NAME” Vision{" "}
+            </h1>
+            <p className="text-[12px] md:text-sm lg:text-base">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book.
+            </p>
           </div>
         </div>
       </div>
