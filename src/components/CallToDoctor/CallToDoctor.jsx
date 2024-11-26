@@ -56,8 +56,8 @@ const CallToDoctor = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="bg-[#d6d7d4] rounded-full p-3">
-                        <AiFillAudio className="text-2xl font-bold text-white" />
+                      <div className="bg-[#d6d7d4] hover:bg-gray-500 rounded-full p-3">
+                        <AiFillAudio className="text-2xl font-bold text-white hover:bg-gray-500" />
                       </div>
                     </div>
 
@@ -73,29 +73,41 @@ const CallToDoctor = () => {
                     </div>
 
                     {/* Bottom Middle Part */}
-                    <div className="absolute bottom-1 left-0 right-0 flex justify-center gap-8">
+                    <div className="absolute -bottom-10 left-0 right-0 flex justify-center gap-9 mx-auto max-w-md py-5 rounded-full bg-[#defef7]/60">
                       <button className="bg-white rounded-full p-3 hover:bg-gray-200 shadow-lg">
-                        <FaMicrophone size={20} />
+                        <FaMicrophone className="text-[#65c8d0]" size={29} />
                       </button>
                       <button className="bg-white rounded-full p-3 hover:bg-gray-200 shadow-lg">
-                        <FaVideo size={20} />
+                        <FaVideo className="text-[#65c8d0]" size={29} />
                       </button>
                       <button className="bg-white rounded-full p-3 hover:bg-gray-200 shadow-lg">
-                        <BsRecordCircle size={20} />
+                        <BsRecordCircle className="text-[#65c8d0]" size={29} />
                       </button>
                       <button className="bg-white rounded-full p-3 hover:bg-gray-200 shadow-lg">
-                        <RiFolderUploadFill size={20} />
+                        <RiFolderUploadFill className="text-[#65c8d0]" size={29} />
                       </button>
                       <button className="bg-red-500 rounded-full p-3 hover:bg-red-400 shadow-lg">
-                        <FaPhoneAlt size={20} color="white" />
+                        <FaPhoneAlt className="text-[#65c8d0]" size={29} color="white" />
                       </button>
                     </div>
+
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+
+        {/* patient info  */}
+        <div>
+
+        </div>
+
+
+
       </div>
     </div>
   );
