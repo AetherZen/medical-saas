@@ -1,11 +1,36 @@
 import Image from "next/image";
-import { FaPhoneAlt, FaVolumeUp } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { FaMicrophone, FaVideo } from "react-icons/fa6";
 import { AiFillAudio } from "react-icons/ai";
 import { BsRecordCircle } from "react-icons/bs";
 import { RiFolderUploadFill } from "react-icons/ri";
+import { FaDownload } from "react-icons/fa";
 
 const CallToDoctor = () => {
+
+  const doctorData = {
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    details: [
+      { label: 'Doctor Name', value: 'Nafiul Islam Jim' },
+      { label: 'Time Duration', value: '01.00 Hours' },
+      { label: 'Appointment Way', value: 'Offline' },
+      { label: 'Department Name', value: 'Anesthesiology Specialties' },
+    ],
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    details: [
+      { label: 'Doctor Name', value: 'Halima Tus Sadia' },
+      { label: 'Time Duration', value: '01.00 Hours' },
+      { label: 'Appointment Way', value: 'Offline' },
+      { label: 'Department Name', value: 'Psychological Specialties' },
+    ],
+  };
+
+
+
+
+
   return (
     <div className="py-10 bg-gradient-to-l from-pink-100 via-blue-100 to-pink-100">
       <div className="max-w-7xl mx-auto section-padding-x">
@@ -26,7 +51,7 @@ const CallToDoctor = () => {
           {/* Part 1 */}
           <div>
             <div className="w-full flex justify-center items-center">
-              <div className="w-full max-w-7xl p-4 bg-[#defef7] rounded-xl shadow-xl flex items-center justify-center">
+              <div className="w-full max-w-7xl p-4 bg-[#DDF0F7] rounded-xl shadow-xl flex items-center justify-center">
                 <div className="relative w-full h-full rounded-xl">
                   {/* Background Image */}
                   <Image
@@ -73,7 +98,7 @@ const CallToDoctor = () => {
                     </div>
 
                     {/* Bottom Middle Part */}
-                    <div className="absolute -bottom-10 left-0 right-0 flex justify-center gap-9 mx-auto max-w-md py-5 rounded-full bg-[#defef7]/60">
+                    <div className="absolute -bottom-10 left-0 right-0 flex justify-center gap-9 mx-auto max-w-md py-5 rounded-full bg-[#DDF0F7]/60">
                       <button className="bg-white rounded-full p-3 hover:bg-gray-200 shadow-lg">
                         <FaMicrophone className="text-[#65c8d0]" size={29} />
                       </button>
@@ -84,14 +109,19 @@ const CallToDoctor = () => {
                         <BsRecordCircle className="text-[#65c8d0]" size={29} />
                       </button>
                       <button className="bg-white rounded-full p-3 hover:bg-gray-200 shadow-lg">
-                        <RiFolderUploadFill className="text-[#65c8d0]" size={29} />
+                        <RiFolderUploadFill
+                          className="text-[#65c8d0]"
+                          size={29}
+                        />
                       </button>
                       <button className="bg-red-500 rounded-full p-3 hover:bg-red-400 shadow-lg">
-                        <FaPhoneAlt className="text-[#65c8d0]" size={29} color="white" />
+                        <FaPhoneAlt
+                          className="text-[#65c8d0]"
+                          size={29}
+                          color="white"
+                        />
                       </button>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -99,15 +129,30 @@ const CallToDoctor = () => {
           </div>
         </div>
 
-
-
         {/* patient info  */}
-        <div>
-
+        <div className="py-12">
+          <div className="bg-gray-100 pt-8 pb-16 lg:mb-8 px-6 lg:px-12 rounded-lg shadow-md">
+            <h1 className="lg:text-4xl text-lx font-bold text-center py-12">
+              Your Doctor In Call
+            </h1>
+            <h2 className="lg:text-xl text-base font-semibold mb-8">Some Information.</h2>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+              {doctorData?.details.map((item, index) => (
+                <div key={index}>
+                  <p className="font-medium">{item.label}</p>
+                  <p className="text-gray-600 text-sm mt-2">{item.value}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-600 mb-6 mt-8 font-medium ">{doctorData.description}</p>
+            <div className="flex justify-end">
+              <button className="bg-teal-500 text-white px-4 py-2 rounded flex items-center gap-2 hover:bg-teal-600">
+                Download Prescription
+                <FaDownload />
+              </button>
+            </div>
+          </div>
         </div>
-
-
-
       </div>
     </div>
   );
