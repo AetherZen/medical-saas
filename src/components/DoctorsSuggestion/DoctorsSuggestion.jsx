@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { BiEdit } from "react-icons/bi";
+import { BsDownload, BsSend } from "react-icons/bs";
 import { RiDeleteBinLine } from "react-icons/ri";
 
 const DoctorsSuggestion = () => {
@@ -227,6 +228,17 @@ const DoctorsSuggestion = () => {
           since the 1500s.
         </p>
       </div>
+
+      <div className="flex justify-end gap-6 my-16 lg:mr-4">
+              <button className="bg-teal-500 text-white text-xs lg:text-base px-4 py-2 rounded flex items-center gap-3 hover:bg-teal-600">
+              Save Document
+                <BsDownload className="text-xl" />
+              </button>
+              <button className="bg-teal-500 text-white text-xs lg:text-base px-4 py-2 rounded flex items-center gap-3 hover:bg-teal-600">
+              Send Document
+                <BsSend  className="text-xl" />
+              </button>
+            </div>
     </div>
   );
 };
