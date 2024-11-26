@@ -11,7 +11,8 @@ module.exports = {
   		colors: {
   			az: {
   				primary: '#65C8D0',
-  				textDark: '#F1F4FB'
+  				textDark: '#F1F4FB',
+				bgPrimary:"#F1F4FB"
   			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
